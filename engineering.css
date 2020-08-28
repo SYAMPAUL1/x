@@ -1,0 +1,181 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav-bar{
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #2F4F4F;
+}
+.navbar-brand img{
+    height:50px;
+    padding-left:50px; 
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    float: right;
+    text-align:left;
+    font-weight: bold;
+    
+}
+#nav-bar ul li a:hover{
+    color: #007bff!important;
+}
+
+.navbar-toggler{
+    border: none!important;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+/*-----SERVICES---*/
+#services{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(WEB/services.jpg);
+    background-size:cover;
+    background-position: center;
+    color:#efefef !important;
+    background-attachment: fixed;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+}
+
+#services h1{
+    text-align: center;
+    color: #efefef!important;
+}
+
+#services h1::after{
+   content:'';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 10px auto 5px;
+}
+.services{
+    margin-top: 40px;
+}
+
+.container{
+    width:1280px;
+    margin:70px auto 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width:360px;
+    height:240px;
+    background: #ff0;
+    margin: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgbox{
+    position: relative;
+    overflow: hidden;
+}
+.container .box .imgbox img{
+    max-width: 100%;
+    transition: transform 1s;
+}
+.container .box:hover  .imgbox img{
+    transform: scale(1.2);
+}
+.container .box .details{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+.container .box .details .content{
+    position: absolute;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size:20px;
+    color: #ff0;
+}
+.container .box .details .content p{
+    margin: 10px 0 0 ;
+    padding: 0;
+}
+
+/*----------contact us----*/
+#contact{
+    background:#efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    color: #777;
+}
+
+#contact h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+#contact h1::after{
+   content:'';
+    background: black;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 10px auto 5px;
+}
+.contact-form{
+    padding: 15px;
+}
+
+.form-control{
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+::placeholder{
+    color: crimson !important;
+}
+
+.follow{
+
+    padding:10px;
+    margin:10px;
+    font-size: 20px;
+}
+
+.follow .fa{
+    font-size:20px;
+}
+.media{
+    font-size: 20px;
+    padding:10px;
+    margin:15px;
+}
+.media .fa{
+    font-size: 50px;
+     padding:10px;
+}
+
